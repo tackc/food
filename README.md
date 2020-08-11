@@ -11,3 +11,6 @@ Run the App by typing:
 ```
 yarn start
 ```
+
+Because the app was created using the expo-cli, some useful tools that come ready to use include:
+* [vector-icons](https://github.com/expo/vector-icons)
