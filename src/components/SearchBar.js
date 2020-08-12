@@ -6,7 +6,7 @@ const SearchBar = () => {
   return (
     <View style={styles.background}>
       <Feather name="search" size={30} />
-      <TextInput>Search Bar</TextInput>
+      <TextInput />
     </View>
   );
 };
