@@ -24,7 +24,8 @@ const styles = StyleSheet.create({
   },
   inputStyle: {
     borderColor: 'black',
-    borderWidth: 1
+    borderWidth: 1,
+    flex: 1 //Use as much space in the flex direction, direction as you can 
   }
 });
 
