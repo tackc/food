@@ -23,13 +23,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row'
   },
   inputStyle: {
-    borderColor: 'black',
-    borderWidth: 1,
     flex: 1, //Use as much space in the flex direction, direction as you can 
   },
   iconStyle: {
     fontSize: 35,
-    alignSelf: 'center'
+    alignSelf: 'center',
+    marginHorizontal: 15
   }
 });
 
