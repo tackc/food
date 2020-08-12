@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
   },
   inputStyle: {
     flex: 1, //Use as much space in the flex direction, direction as you can 
+    fontSize: 18
   },
   iconStyle: {
     fontSize: 35,
