@@ -9,6 +9,8 @@ const SearchBar = ({ term, onTermChange }) => {
       <TextInput
         style={styles.inputStyle}
         placeholder="Search"
+        value={term}
+        onChangeText={newTerm => onTermChange}
       />
     </View>
   );
