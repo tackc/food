@@ -23,9 +23,12 @@ const searchApi = async (searchTerm) => {
   }
 };
 
+  // // Call searchApi when component is first rendered. BAD CODE
+  // searchApi('pasta'); this will create an infinite loop
+
   return (
     <View>
-      <SearchBar term={term} onTermChange={setTerm} onTermSubmit={searchApi} />
+      <SearchBar term={term} onTermChange={setTerm} onTermSubmit={() => searchApi(term)} />
       {errorMessage ? <Text>{errorMessage}</Text> : null}
       <Text>We have found {results.length} results</Text>
     </View>
