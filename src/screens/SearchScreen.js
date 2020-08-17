@@ -20,7 +20,7 @@ const searchApi = async () => {
 
   return (
     <View>
-      <SearchBar term={term} onTermChange={newTerm => setTerm(newTerm)} onTermSubmit={() => console.log('term was submitted')} />
+      <SearchBar term={term} onTermChange={newTerm => setTerm(newTerm)} onTermSubmit={searchApi} />
       <Text>Search Screen</Text>
       <Text>We have found {results.length} results</Text>
     </View>
