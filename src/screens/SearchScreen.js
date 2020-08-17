@@ -26,6 +26,11 @@ const searchApi = async (searchTerm) => {
   // // Call searchApi when component is first rendered. BAD CODE
   // searchApi('pasta'); this will create an infinite loop
 
+  // Passing empty array as second argument tells react to only run this once
+  useEffect(() => {
+    searchApi('pasta');
+  }, []);
+
   return (
     <View>
       <SearchBar term={term} onTermChange={setTerm} onTermSubmit={() => searchApi(term)} />
