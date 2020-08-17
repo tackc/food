@@ -8,14 +8,18 @@ const SearchScreen = () => {
   const [results, setResults] = useState([]);
 
 const searchApi = async () => {
-  const response = await yelp.get('/search', {
-    params: {
-      limit: 50,
-      term,
-      location: 'seattle'
-    }
-  });
-  setResults(response.data.businesses);
+  try {
+    const response = await yelp.get('/search', {
+      params: {
+        limit: 50,
+        term,
+        location: 'seattle'
+      }
+    });
+    setResults(response.data.businesses);
+  } catch (err) {
+    console.log(err);
+  }
 };
 
   return (
