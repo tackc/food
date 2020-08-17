@@ -19,14 +19,14 @@ const searchApi = async () => {
     });
     setResults(response.data.businesses);
   } catch (err) {
-    console.log(err);
+    setErrorMessage('Something went wrong :(');
   }
 };
 
   return (
     <View>
       <SearchBar term={term} onTermChange={setTerm} onTermSubmit={searchApi} />
-      <Text>Search Screen</Text>
+      <Text>{errorMessage}</Text>
       <Text>We have found {results.length} results</Text>
     </View>
   );
