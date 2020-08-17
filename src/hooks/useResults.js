@@ -27,4 +27,6 @@ const searchApi = async (searchTerm) => {
   useEffect(() => {
     searchApi('pasta');
   }, []);
+
+  return [searchApi, results, errorMessage];
 };
