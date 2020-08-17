@@ -26,7 +26,7 @@ const searchApi = async () => {
   return (
     <View>
       <SearchBar term={term} onTermChange={setTerm} onTermSubmit={searchApi} />
-      <Text>{errorMessage}</Text>
+      {errorMessage ? <Text>{errorMessage}</Text> : null}
       <Text>We have found {results.length} results</Text>
     </View>
   );
