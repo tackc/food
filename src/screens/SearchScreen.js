@@ -7,7 +7,7 @@ const SearchScreen = () => {
   const [term, setTerm] = useState('');
   const [results, setResults] = useState([]);
 
-const searchApi = () => {
+const searchApi = async () => {
   yelp.get('/search');
 };
 
