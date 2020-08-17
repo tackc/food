@@ -8,7 +8,8 @@ const SearchScreen = () => {
   const [results, setResults] = useState([]);
 
 const searchApi = async () => {
-  yelp.get('/search');
+  const response = await yelp.get('/search');
+  setResults(response.data.businesses);
 };
 
   return (
