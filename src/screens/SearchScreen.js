@@ -7,6 +7,10 @@ const SearchScreen = () => {
   const [term, setTerm] = useState('');
   const [results, setResults] = useState([]);
 
+const searchApi = () => {
+  yelp.get('/search');
+};
+
   return (
     <View>
       <SearchBar term={term} onTermChange={newTerm => setTerm(newTerm)} onTermSubmit={() => console.log('term was submitted')} />
