@@ -8,6 +8,7 @@ const ResultsList = ({ title, results }) => {
       <FlatList 
         horizontal
         data={results}
+        keyExtractor={(result) => result.id}
       />
     </View>
   );
