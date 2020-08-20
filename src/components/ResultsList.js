@@ -9,6 +9,11 @@ const ResultsList = ({ title }) => {
   );
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  title: {
+    fontSize: 18,
+    fontWeight: 'bold'
+  }
+});
 
 export default ResultsList
