@@ -16,7 +16,7 @@ const filterResultsByPrice = (price) => {
 };
 
   return (
-    <View style={{ flex: 1 }}>
+    <>
       <SearchBar term={term} onTermChange={setTerm} onTermSubmit={() => searchApi(term)} />
       {errorMessage ? <Text>{errorMessage}</Text> : null}
       <Text>We have found {results.length} results</Text>
@@ -25,7 +25,7 @@ const filterResultsByPrice = (price) => {
         <ResultsList results={filterResultsByPrice('$$')} title="Mid-Range" />
         <ResultsList results={filterResultsByPrice('$$$')} title="Expensive" />
       </ScrollView>
-    </View>
+    </>
   );
 };
 
