@@ -7,7 +7,8 @@ const ResultsShowScreen = ({ navigation }) => {
   const id = navigation.getParam('id');
 
 const getResult = async (id) => {
-  await yelp.get(`/${id}`);
+  const response = await yelp.get(`/${id}`);
+  setResult(response.data);
 };
 
   return (
