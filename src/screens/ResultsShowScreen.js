@@ -12,7 +12,7 @@ const getResult = async (id) => {
 };
 useEffect(() => {
   getResult(id);
-}, [])
+}, []);
 
   return (
     <View>
