@@ -14,6 +14,10 @@ useEffect(() => {
   getResult(id);
 }, []);
 
+if (!result) {
+  return null;
+}
+
   return (
     <View>
       <Text>Results Show</Text>
