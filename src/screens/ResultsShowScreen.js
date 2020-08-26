@@ -20,7 +20,7 @@ if (!result) {
 
   return (
     <View>
-      <Text>Results Show</Text>
+      <Text>{result.name}</Text>
     </View>
   );
 };
